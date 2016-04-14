@@ -1,0 +1,10 @@
+{
+  "name": "kz-task-scp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "weixinchen",
+  "dependencies": {
+    "scp2": "^0.2.2"
+  }
+}
