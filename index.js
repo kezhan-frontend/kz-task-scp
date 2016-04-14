@@ -12,7 +12,7 @@ module.exports = function(options) {
 
         bone.log('scp', 'start sync to server: '+options.server.host+':'+options.server.path);
 
-        client.scp(static, options.server, function(err) {
+        client.scp(staticPath, options.server, function(err) {
             if(err) {
                 throw err;
             } else {
