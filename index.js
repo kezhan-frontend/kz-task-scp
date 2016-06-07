@@ -10,7 +10,7 @@ module.exports = function(options) {
     return function() {
         var staticPath = this.fs.pathResolve(options.path);
 
-        bone.log('scp', 'start sync to server: '+options.server.host+':'+options.server.path);
+        bone.log('scp', 'start sync '+options.path+' to server: '+options.server.host+':'+options.server.path);
 
         client.scp(staticPath, options.server, function(err) {
             if(err) {
